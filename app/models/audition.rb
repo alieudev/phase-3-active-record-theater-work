@@ -1,9 +1,7 @@
 class Audition < ActiveRecord::Base
     belongs_to :role
 
-    def role
-        self.roles
-    end
+    #Audition.first.role 
 
     def call_back
         self.update(hired:true)
